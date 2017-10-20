@@ -17,8 +17,8 @@ title: Report Engine
 email: mvollset@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Documentation for Reportengine in norwegian
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/doc-report" # the subpath of your site, e.g. /blog
+url: "https://mvollset.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mvollset
 github_username:  mvollset
 
@@ -26,8 +26,7 @@ github_username:  mvollset
 markdown: kramdown
 theme: jekyll-theme-slate
 repository: mvollset/doc-report.git
-plugins:
-  - jekyll-toc
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
