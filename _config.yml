@@ -24,7 +24,7 @@ github_username:  mvollset
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-slate
 repository: mvollset/doc-report.git
 plugins:
   - jekyll-toc
