@@ -1,3 +1,6 @@
+---
+layout: posts
+---
 # Getting stupid
 
 Hvordan komme i gang med Simple Report Engine.

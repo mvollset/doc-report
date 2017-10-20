@@ -1,3 +1,6 @@
+---
+layout: posts
+---
 # Server aggregering
 
 Det er mulig å sette opp enkel aggregering av dataene. Dette gjøres i config.js fila til rapporten.

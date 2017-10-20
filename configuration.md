@@ -1,3 +1,6 @@
+---
+layout: posts
+---
 # Konfigurasjon av Stupid Reporting.
 
 Konfigurasjon gjøres i, hovedsaklig, to filer. /config/config.js og i hvis den kjører under iisnode i web.config. Opsjonene i web.config er dokumentert her:

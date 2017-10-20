@@ -1,3 +1,6 @@
+---
+layout: posts
+---
 # Rapport
 
 ## Hva en rapport består av.

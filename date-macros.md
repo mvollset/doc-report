@@ -1,3 +1,6 @@
+---
+layout: posts
+---
 # Dato makroer
 
 I dato felt er det mulig å legge inn "makro" verdier. Dette gjør det mulig å lage default verdier på datoparametere som endrer seg over tid. Makroene er:

@@ -1,3 +1,6 @@
+---
+layout: posts
+---
 # Views
 Et view er en presentasjon av data. Det bestemmer hvordan data skal vises til sluttbrukeren. Noen views forventer at datagrunnlaget er på en bestemt form.
 

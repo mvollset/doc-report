@@ -1,3 +1,6 @@
+---
+layout: posts
+---
 # Rapportmotor (Stupid reporting)
 
 Målet med SRE er å lage et enkelt og fleksibelt rammeverk som kan være utgangspunktet for ad hoc rapporter som vi leverer i kundeprosjekter. Rapporter skal kunne leveres som tekstfiler og enkelt kunne gjenbrukes i andre prosjekter. Selve SRE er laget i node.js slik at også serveren er "tekst" filer, dette gjør det mulig å være cowboy også.

@@ -24,9 +24,10 @@ github_username:  mvollset
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
-repository: mvollset/reportengine-doc
-
+theme: minima
+repository: mvollset/doc-report.git
+plugins:
+  - jekyll-toc
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
