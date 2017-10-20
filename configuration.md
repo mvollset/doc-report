@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: default
 ---
 # Konfigurasjon av Stupid Reporting.
 

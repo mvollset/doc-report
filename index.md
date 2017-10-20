@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: home
 ---
 # Rapportmotor (Stupid reporting)
 
