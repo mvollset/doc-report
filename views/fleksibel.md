@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Fleksibel viewet.
 
 Fleksibel viewet er en pivot tabell visning av dataene. Det gir sluttbrukeren mulighet til å velge hvilke kolonner og rader det skal summeres på, og hvilke kolonne som skal summeres og hvordan data skal presenteres. Dette styres ved hjelp av opsjoner som settes i config fila.
