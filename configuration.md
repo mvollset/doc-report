@@ -35,6 +35,32 @@ config.dbconfig={ user: "user",
 }
 ```
 
+## Flere databaseforbindelser
+Det er også mulig å ha flere databaseforbindelser, de må settes opp slik:
+```js
+config.db_connections={
+    "[connectionname]":{
+        db_module:"ms",
+        user: "user",
+    password: "secret",
+    database: "db",
+    server: "db-server",
+    connectionTimeout: 60000,
+    requestTimeout: 120000
+    },
+    "json-test":{
+        db_module:"web-json"
+    }
+}
+```
+
+I rapporter vil disse database forbindelsene refereres til slik:
+```js
+"connectionname":"json-test"
+```
+
+
+
 ## CSV parametere
 Dato biblioteket som brukes er moment, dokumentasjon på alle muligheter finnes her: [moment.js](http://momentjs.com/docs/#/displaying/format/)
 

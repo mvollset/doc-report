@@ -21,7 +21,7 @@ myreport/
 ### report.json
 Denne definerer selve rapporten og rapportens egenskaper og attributter.
 
-### report.sql
+### report.sql / queryfile.js
 Inneholder selve spørringen til rapporten.
 
 ### README.md 
@@ -41,7 +41,7 @@ Javascript fil som inneholder evt ekstra kode som følger med rapporten. Dette k
 Følgende egenskaper kan settes på en rapport:
  - **name** Dette er påkrevd og må kunne brukes i en url
  - **title** Tittel, navnet som brukeren forholder seg til
- - **sqlfile** Navn på fil med spørring.
+ - **sqlfile**/**queryfile** Navn på fil med spørring.
  - [show] true/false default false, skal rapporten vises på forsiden.
  - [view] Viewet som rapporten skal bruke
  - [blurb] Navn på markdown fil som inneholder en beskrivelse av rapporten
@@ -52,5 +52,45 @@ Følgende egenskaper kan settes på en rapport:
  - [tags] Array av tags, brukes til å styre informasjonen på første siden.
  - [helpfile] Lengre beskrivelse som vises på selve rapportsiden.
 
+
+### Queryfile. 
+
+Angir du denne med datasource type web-json så vil reportengine kjøre et webkall i stedet for en databasespørring.
+```
+query={
+	url:'http://localhost:3333/sr-ma-ytd',
+	auth:{
+    'bearer': 'hemmelighet'
+  }
+}
+module.exports=query;
+```
+Web-Query modulen gjør et get kall mot den angitte url'en og sender med evt. auth headere. Den forventer at responsen er som et recordset med kolonne angivelser.
+F.eks.
+```js
+{.
+	"cols": {
+		"name": {
+			"name": "name",
+			"type": "string"
+		},
+		"actual": {
+			"name": "actual",
+			"type": "string"
+		},
+		"target": {
+			"name": "target",
+			"type": "number"
+		}
+	},
+	"rows": [{
+		"name": "Logget beløp alle (i tusen)",
+		"actual": 697,
+		"target": 3150
+	}]
+}
+```
+
+Så den enkleste måten å gjøre det på er å skrive en proxytjeneste som gir deg dataene slik du vil ha de. Eksempel på en slik tjeneste er google-connector som leser fra Google spreadsheets.
 
 

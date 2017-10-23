@@ -129,7 +129,7 @@ Hvis vi vil at brukeren skal kunne velge parenttype så må vi legge opp opsjone
 }
 ```
 
-<blockquote class="tip">Options objekter har både en markup og en value property, markup er det som vises, og value er verdien. </blockquote> 
+>Options objekter har både en markup og en value property, markup er det som vises, og value er verdien.
 
 >Alle filer skal lagres som UTF-8!!!
 
