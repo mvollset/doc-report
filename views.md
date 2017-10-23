@@ -8,7 +8,7 @@ Et view er en presentasjon av data. Det bestemmer hvordan data skal vises til sl
 
 Det er datatables.js som brukes for å implementere sortering i tabellene. Hvis du ønsker at en tabell skal være "sorterbar" må tabellen ha klassen sortable, da vil den automatisk bli gjort om til datatables tabell. 
 
-<blockquote class="tip">Det tar tid å laste en tabellen inn som en datatable, så prøv å unngå dette ved store datamengder.</blockquote> 
+>Det tar tid å laste en tabellen inn som en datatable, så prøv å unngå dette ved store datamengder.
 
 ## Kolonnevelger
 

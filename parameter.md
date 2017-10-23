@@ -13,7 +13,7 @@ Spørretekst ut til brukeren.
 ## required [true/false]
 Om parameteret må være fylt ut for at rapporten skal kjøre eller ikke.
 
-## type [select,mulitselect,autocomplete,date,datetime] 
+## type [select,multiselect,autocomplete,date,datetime] 
 Type parameter.
 
 ## operator [=,in list,between,like....]
@@ -36,7 +36,7 @@ options:[{markup:"Brille",value:"brille"},
 ```
 
 ## paramsql
-Sql spørring for å hente opsjoner fra databasen, i stedet for å angi dem i options paramteret. Spørringen må returnere en markup og en value kolonne.
+Sql spørring for å hente opsjoner fra databasen, i stedet for å angi dem i options parameteret. Spørringen må returnere en markup og en value kolonne.
 
 ## depends
 Array med navn på parametere dette parameteret er avhengig av. Det er da mulig å referere til evt. parametere i paramsql:
