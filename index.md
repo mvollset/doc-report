@@ -27,14 +27,14 @@ Se forøvrig [Getting Stupid](getting-stupid.html) for en steg for steg forkalri
 
 ### Tekniske greier
 
-Report engine bruker mange open source komponener:
+Report engine bruker mange open source komponenter:
 * [node.js](http://nodejs.org) - evented I/O for the backend
 * [Express](http://expressjs.com) fast node.js network app framework
 * [Jade](http://jade-lang.com) Templating system
 * [Grunt](http://gruntjs.com) - streaming build system
 * [Foundation](http://foundation.zurb.com) - Responsive front end
 * [jQuery](http://jquery.com) - duh
-
+* [IIS Node](https://github.com/tjanczuk/iisnode/releases) - IISNode for å kjøre som en del av IIS.
 Og et som ikke er opensource, men er viktig for det:
 * [Highcharts](http://highcharts.com) For visualisering.
 
